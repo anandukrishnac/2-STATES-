@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 STATES - Punjab × Tamil Nadu | College Event & Blog</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-parchment text-stone-800 dark:text-stone-100 antialiased transition-colors duration-300">
+
+  <!-- TOP HEADER BANNER -->
+  <div class="bg-gradient-to-r from-amber-900 via-stone-900 to-emerald-950 text-amber-200 text-xs py-2 px-4 text-center border-b border-amber-500/30">
+    <div class="container mx-auto flex flex-wrap justify-between items-center gap-2">
+      <span class="truncate"><i class="fa-solid fa-graduation-cap text-amber-400 mr-2"></i>Asan Memorial College of Arts and Science • Dept. of Hotel & Catering Management</span>
+      <span class="font-bold tracking-wide text-white"><i class="fa-solid fa-star text-amber-400 mr-1"></i>Organised by ASH | Presented by 2nd Year Students</span>
+      <span class="hidden sm:inline"><i class="fa-solid fa-calendar-day text-amber-400 mr-1"></i>October 09, 2026 | Venue: ASH</span>
+    </div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="sticky top-0 z-40 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-stone-200 dark:border-slate-800 shadow-sm transition-colors">
+    <div class="container mx-auto px-4 py-2.5 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <img src="images/logo.jpg" alt="2 STATES Official Circular Logo" class="w-12 h-12 rounded-full object-cover shadow-md group-hover:scale-105 transition-transform border border-amber-400/50"/>
+        <div>
+          <span class="text-xl font-extrabold text-stone-900 dark:text-white tracking-tight font-serif-heading block leading-none">2 STATES</span>
+          <span class="text-[10px] text-amber-700 dark:text-amber-400 font-bold uppercase tracking-widest">Punjab × Tamil Nadu</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold text-stone-700 dark:text-slate-200">
+        <a href="#about" class="hover:text-amber-700 dark:hover:text-amber-400 transition-colors">About</a>
+        <a href="#menu" class="hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Culinary Menu</a>
+        <a href="#cultural" class="hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Pollywood × Kollywood</a>
+        <a href="#eventflow" class="hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Event Flow</a>
+        <a href="#blog" class="hover:text-amber-700 dark:hover:text-amber-400 transition-colors">Blog & Stories</a>
+      </nav>
+
+      <!-- Theme Switcher -->
+      <div class="flex items-center gap-3">
+        <!-- Theme Switcher Button -->
+        <button id="themeToggleBtn" aria-label="Toggle Light and Dark Mode" class="w-9 h-9 rounded-full bg-stone-100 dark:bg-slate-800 border border-stone-300 dark:border-slate-700 flex items-center justify-center hover:scale-105 transition-all text-sm">
+          <i id="themeIcon" class="fa-solid fa-moon text-stone-700 dark:text-amber-400"></i>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" aria-label="Toggle Mobile Menu" class="md:hidden text-stone-700 dark:text-slate-200 p-2 text-xl focus:outline-none">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobileNav" class="hidden md:hidden bg-white dark:bg-slate-900 border-b border-stone-200 dark:border-slate-800 px-4 py-4 space-y-3 text-sm font-semibold text-stone-700 dark:text-slate-200 shadow-lg">
+      <a href="#about" class="block hover:text-amber-700 dark:hover:text-amber-400">About Event</a>
+      <a href="#menu" class="block hover:text-amber-700 dark:hover:text-amber-400">Culinary Menu</a>
+      <a href="#cultural" class="block hover:text-amber-700 dark:hover:text-amber-400">Pollywood × Kollywood</a>
+      <a href="#eventflow" class="block hover:text-amber-700 dark:hover:text-amber-400">Event Flow</a>
+      <a href="#blog" class="block hover:text-amber-700 dark:hover:text-amber-400">Blog Stories</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative bg-dual-culture text-white overflow-hidden py-16 lg:py-24">
+    <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <!-- Left Banner Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 text-xs font-bold tracking-wider uppercase backdrop-blur-sm">
+            <i class="fa-solid fa-wheat-awn"></i> Punjab <span class="text-white">×</span> Tamil Nadu <i class="fa-solid fa-kaaba"></i>
+          </div>
+          
+          <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight font-serif-heading leading-tight">
+            2 STATES
+            <span class="block text-2xl sm:text-4xl text-amber-400 font-subheading font-normal mt-2">
+              A CULINARY JOURNEY • TWO CULTURES. ONE TABLE.
+            </span>
+          </h1>
+          
+          <p class="text-stone-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+            Organised by <strong>ASH</strong> (Asan Society of Hospitality) and presented by 2nd Year Hotel and Catering Management Students. Join us for an extraordinary Islamic Buffet dining experience celebrating authentic Punjabi flavors and Tamil heritage.
+          </p>
+
+          <!-- Live Event Countdown -->
+          <div class="pt-4">
+            <p class="text-xs uppercase font-bold tracking-widest text-amber-300 mb-3">Event Starts In:</p>
+            <div class="flex flex-wrap justify-center lg:justify-start gap-3">
+              <div class="countdown-box px-4 py-3 rounded-xl text-center min-w-[70px]">
+                <span id="countdownDays" class="block text-2xl sm:text-3xl font-bold font-serif-heading text-white">00</span>
+                <span class="text-[10px] text-amber-300 font-bold uppercase">Days</span>
+              </div>
+              <div class="countdown-box px-4 py-3 rounded-xl text-center min-w-[70px]">
+                <span id="countdownHours" class="block text-2xl sm:text-3xl font-bold font-serif-heading text-white">00</span>
+                <span class="text-[10px] text-amber-300 font-bold uppercase">Hours</span>
+              </div>
+              <div class="countdown-box px-4 py-3 rounded-xl text-center min-w-[70px]">
+                <span id="countdownMins" class="block text-2xl sm:text-3xl font-bold font-serif-heading text-white">00</span>
+                <span class="text-[10px] text-amber-300 font-bold uppercase">Mins</span>
+              </div>
+              <div class="countdown-box px-4 py-3 rounded-xl text-center min-w-[70px]">
+                <span id="countdownSecs" class="block text-2xl sm:text-3xl font-bold font-serif-heading text-white">00</span>
+                <span class="text-[10px] text-amber-300 font-bold uppercase">Secs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero CTAs -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="#menu" class="px-8 py-3.5 bg-amber-500 hover:bg-amber-600 text-stone-950 font-bold rounded-full text-sm shadow-xl transition-all flex items-center gap-2">
+              <i class="fa-solid fa-utensils"></i> View Menu & Feast
+            </a>
+            <a href="#blog" class="px-8 py-3.5 bg-white/10 hover:bg-white/20 text-white font-bold rounded-full text-sm border border-white/20 backdrop-blur-sm transition-all flex items-center gap-2">
+              <i class="fa-solid fa-book-open"></i> Read Event Blog
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Visual Showcase Card -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md bg-stone-900/90 border border-amber-500/40 rounded-3xl p-6 shadow-2xl backdrop-blur-md">
+            <div class="absolute -top-4 -right-4 bg-amber-500 text-stone-950 text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
+              09 OCT 2026
+            </div>
+
+            <div class="text-center space-y-4">
+              <div class="w-16 h-16 mx-auto rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl border border-amber-500/40">
+                <i class="fa-solid fa-film"></i>
+              </div>
+              <h3 class="text-2xl font-bold font-serif-heading text-white">POLLYWOOD × KOLLYWOOD</h3>
+              <p class="text-xs text-amber-300 font-semibold tracking-widest uppercase">Two Industries • One Stage</p>
+              
+              <div class="grid grid-cols-2 gap-3 pt-3 text-left">
+                <div class="p-3 bg-stone-800/80 rounded-xl border border-stone-700 text-xs">
+                  <span class="block text-amber-400 font-bold">Punjab Vibe</span>
+                  <span class="text-stone-300">Energy, Bhangra & Saffron Lassi</span>
+                </div>
+                <div class="p-3 bg-stone-800/80 rounded-xl border border-stone-700 text-xs">
+                  <span class="block text-emerald-400 font-bold">Tamil Soul</span>
+                  <span class="text-stone-300">Grace, Bharatanatyam & Filter Coffee</span>
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-stone-800 flex justify-between items-center text-xs text-stone-400">
+                <span><i class="fa-solid fa-location-dot text-amber-400 mr-1"></i>Venue: ASH</span>
+                <span><i class="fa-solid fa-utensils text-amber-400 mr-1"></i>Islamic Buffet Style</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & ISLAMIC BUFFET CONCEPT SECTION -->
+  <section id="about" class="py-16 sm:py-24 bg-white dark:bg-slate-900 border-b border-stone-200 dark:border-slate-800 transition-colors">
+    <div class="container mx-auto px-4">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-extrabold text-amber-700 dark:text-amber-400 uppercase tracking-widest">Hospitality Excellence</span>
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-serif-heading text-stone-900 dark:text-white mt-2">About The 2 States Event</h2>
+        <div class="w-20 h-1.5 bg-amber-600 mx-auto mt-4 rounded-full"></div>
+        <p class="text-stone-600 dark:text-slate-300 text-base sm:text-lg mt-5 leading-relaxed">
+          The Department of Hotel and Catering Management at Asan Memorial College presents <strong>2 STATES</strong>—a unique culinary and cultural celebration designed, cooked, and managed by 2nd-year hospitality students.
+        </p>
+      </div>
+
+      <!-- Feature Grid -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="p-8 rounded-2xl bg-amber-50/50 dark:bg-slate-800 border border-amber-200 dark:border-slate-700 hover-lift">
+          <div class="w-12 h-12 rounded-xl bg-amber-600 text-white flex items-center justify-center text-xl mb-4 shadow-md">
+            <i class="fa-solid fa-kaaba"></i>
+          </div>
+          <h3 class="text-xl font-bold font-serif-heading text-stone-900 dark:text-white mb-2">Islamic Buffet Style</h3>
+          <p class="text-stone-600 dark:text-slate-300 text-sm leading-relaxed">
+            A practical, efficient, and aesthetically pleasing serving concept. 100% Halal compliant, time efficient, reduced waiting times, and elegant presentation.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="p-8 rounded-2xl bg-emerald-50/50 dark:bg-slate-800 border border-emerald-200 dark:border-slate-700 hover-lift">
+          <div class="w-12 h-12 rounded-xl bg-emerald-700 text-white flex items-center justify-center text-xl mb-4 shadow-md">
+            <i class="fa-solid fa-shirt"></i>
+          </div>
+          <h3 class="text-xl font-bold font-serif-heading text-stone-900 dark:text-white mb-2">Traditional Service Attire</h3>
+          <p class="text-stone-600 dark:text-slate-300 text-sm leading-relaxed">
+            Servers dressed in authentic attire—Punjabi Kurta & Turbans and Tamil Kanchipuram Silk Sarees—bringing deep cultural immersion to your table.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-8 rounded-2xl bg-stone-50 dark:bg-slate-800 border border-stone-200 dark:border-slate-700 hover-lift">
+          <div class="w-12 h-12 rounded-xl bg-stone-900 dark:bg-amber-600 text-white flex items-center justify-center text-xl mb-4 shadow-md">
+            <i class="fa-solid fa-compact-disc"></i>
+          </div>
+          <h3 class="text-xl font-bold font-serif-heading text-stone-900 dark:text-white mb-2">Pollywood × Kollywood</h3>
+          <p class="text-stone-600 dark:text-slate-300 text-sm leading-relaxed">
+            Live acoustic music dining, Bhangra & Bharatanatyam dance fusion, cinema skits, fashion walk, and interactive audience movie quizzes.
+          </p>
+        </div>
+      </div>
+
+      <!-- ISLAMIC BUFFET VISUAL GALLERY -->
+      <div class="mt-16 pt-12 border-t border-stone-200 dark:border-slate-800">
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <span class="text-xs font-extrabold text-amber-700 dark:text-amber-400 uppercase tracking-widest">Visual Showcase</span>
+          <h3 class="text-2xl sm:text-3xl font-bold font-serif-heading text-stone-900 dark:text-white mt-1">Islamic Buffet Style & Ambience</h3>
+          <p class="text-stone-600 dark:text-slate-300 text-sm mt-1">Centralized island layout, traditional serveware, and visual dining setup.</p>
+        </div>
+        
+        <div id="islamicBuffetGrid" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CULINARY MENU SECTION -->
+  <section id="menu" class="py-16 sm:py-24 bg-parchment transition-colors">
+    <div class="container mx-auto px-4">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-extrabold text-amber-700 dark:text-amber-400 uppercase tracking-widest">Two Regions • One Feast</span>
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-serif-heading text-stone-900 dark:text-white mt-2">The 2 States Menu</h2>
+        <div class="w-20 h-1.5 bg-amber-600 mx-auto mt-4 rounded-full"></div>
+        <p class="text-stone-600 dark:text-slate-300 text-base sm:text-lg mt-5">Explore authentic Punjabi classics paired side-by-side with Tamil Nadu delicacies.</p>
+      </div>
+
+      <!-- Region Filter Toggle Buttons -->
+      <div class="flex justify-center gap-3 mb-8 flex-wrap">
+        <button id="region-all" onclick="setMenuRegion('all')" class="region-btn active-all px-5 py-2.5 rounded-full text-xs font-bold border border-stone-300 dark:border-slate-700 shadow-sm transition-all">
+          <i class="fa-solid fa-globe mr-1"></i> All Dishes (12)
+        </button>
+        <button id="region-punjab" onclick="setMenuRegion('punjab')" class="region-btn px-5 py-2.5 rounded-full text-xs font-bold bg-white dark:bg-slate-800 text-stone-700 dark:text-slate-200 border border-amber-300 dark:border-slate-700 hover:bg-amber-100 transition-all">
+          <i class="fa-solid fa-wheat-awn text-amber-600 mr-1"></i> Punjab Specials
+        </button>
+        <button id="region-tamilnadu" onclick="setMenuRegion('tamilnadu')" class="region-btn px-5 py-2.5 rounded-full text-xs font-bold bg-white dark:bg-slate-800 text-stone-700 dark:text-slate-200 border border-emerald-300 dark:border-slate-700 hover:bg-emerald-100 transition-all">
+          <i class="fa-solid fa-kaaba text-emerald-700 mr-1"></i> Tamil Nadu Specials
+        </button>
+      </div>
+
+      <!-- Course Category Tabs -->
+      <div class="flex justify-center border-b border-stone-300 dark:border-slate-700 max-w-2xl mx-auto mb-10 overflow-x-auto">
+        <button id="cat-all" onclick="setMenuCategory('all')" class="tab-btn active px-4 py-2.5 text-xs font-bold border-b-2 transition-all whitespace-nowrap">
+          All Courses
+        </button>
+        <button id="cat-drinks" onclick="setMenuCategory('drinks')" class="tab-btn px-4 py-2.5 text-xs font-bold border-b-2 text-stone-600 dark:text-slate-400 border-transparent hover:text-stone-900 transition-all whitespace-nowrap">
+          Welcome Drinks
+        </button>
+        <button id="cat-starters" onclick="setMenuCategory('starters')" class="tab-btn px-4 py-2.5 text-xs font-bold border-b-2 text-stone-600 dark:text-slate-400 border-transparent hover:text-stone-900 transition-all whitespace-nowrap">
+          Starters
+        </button>
+        <button id="cat-main" onclick="setMenuCategory('main')" class="tab-btn px-4 py-2.5 text-xs font-bold border-b-2 text-stone-600 dark:text-slate-400 border-transparent hover:text-stone-900 transition-all whitespace-nowrap">
+          Main Course
+        </button>
+        <button id="cat-desserts" onclick="setMenuCategory('desserts')" class="tab-btn px-4 py-2.5 text-xs font-bold border-b-2 text-stone-600 dark:text-slate-400 border-transparent hover:text-stone-900 transition-all whitespace-nowrap">
+          Desserts
+        </button>
+        <button id="cat-beverages" onclick="setMenuCategory('beverages')" class="tab-btn px-4 py-2.5 text-xs font-bold border-b-2 text-stone-600 dark:text-slate-400 border-transparent hover:text-stone-900 transition-all whitespace-nowrap">
+          Beverages
+        </button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div id="menuGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CULTURAL PROGRAM SECTION WITH SMALL IMAGES -->
+  <section id="cultural" class="py-16 sm:py-24 bg-stone-950 text-white relative">
+    <div class="container mx-auto px-4">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-extrabold text-amber-400 uppercase tracking-widest">Entertainment & Fusion</span>
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-serif-heading text-white mt-2">Pollywood × Kollywood Program</h2>
+        <div class="w-20 h-1.5 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+        <p class="text-stone-400 text-base sm:text-lg mt-5 leading-relaxed">
+          Energy from Pollywood meets Grace from Kollywood across dance, live acoustics, fashion, and cinema skits.
+        </p>
+      </div>
+
+      <div id="culturalGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered by JS with Images -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 13-STEP EVENT FLOW SECTION -->
+  <section id="eventflow" class="py-16 sm:py-24 bg-white dark:bg-slate-900 border-b border-stone-200 dark:border-slate-800 transition-colors">
+    <div class="container mx-auto px-4">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-extrabold text-amber-700 dark:text-amber-400 uppercase tracking-widest">From Welcome to Farewell</span>
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-serif-heading text-stone-900 dark:text-white mt-2">The 13-Step Event Flow</h2>
+        <div class="w-20 h-1.5 bg-amber-600 mx-auto mt-4 rounded-full"></div>
+        <p class="text-stone-600 dark:text-slate-300 text-base sm:text-lg mt-5">A seamless hospitality sequence guiding our guests through a memorable evening.</p>
+      </div>
+
+      <div id="eventFlowTimeline" class="max-w-3xl mx-auto">
+        <!-- Rendered by JS with Images -->
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG & STORIES SECTION -->
+  <section id="blog" class="py-16 sm:py-24 bg-parchment transition-colors">
+    <div class="container mx-auto px-4">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-extrabold text-amber-700 dark:text-amber-400 uppercase tracking-widest">Official Event Articles</span>
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-serif-heading text-stone-900 dark:text-white mt-2">2 States Blog & Stories</h2>
+        <div class="w-20 h-1.5 bg-amber-600 mx-auto mt-4 rounded-full"></div>
+        <p class="text-stone-600 dark:text-slate-300 text-base sm:text-lg mt-5">Read behind-the-scenes insights, recipe stories, and student experiences.</p>
+      </div>
+
+      <!-- Search & Filters -->
+      <div class="max-w-4xl mx-auto mb-8 space-y-4">
+        <div class="relative">
+          <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-stone-400"></i>
+          <input type="text" id="blogSearch" placeholder="Search blog articles by title or keyword..." class="w-full pl-11 pr-4 py-3 bg-white dark:bg-slate-800 border border-stone-300 dark:border-slate-700 rounded-2xl text-sm text-stone-900 dark:text-white focus:outline-none focus:border-amber-600 shadow-sm"/>
+        </div>
+
+        <div id="blogCategories" class="flex flex-wrap gap-2 justify-center">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Blog Grid -->
+      <div id="blogGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-stone-950 text-stone-400 py-12 border-t border-stone-800">
+    <div class="container mx-auto px-4 text-center space-y-4">
+      <div class="text-2xl font-bold font-serif-heading text-amber-400">2 STATES</div>
+      <p class="text-xs text-stone-400 max-w-md mx-auto">
+        A Culinary Journey • Punjab × Tamil Nadu • Organised by ASH Department of Hotel and Catering Management, Asan Memorial College of Arts and Science.
+      </p>
+      <div class="text-xs text-stone-600 pt-4 border-t border-stone-900">
+        © 2026 Asan Memorial College of Arts and Science. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- BLOG ARTICLE MODAL -->
+  <div id="blogModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white dark:bg-slate-800 rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative" id="blogModalContent">
+      <!-- Dynamic Content Rendered by JS -->
+    </div>
+  </div>
+
+  <!-- App Data and Logic -->
+  <script src="data.js"></script>
+  <script src="styles.css"></script>
+  <script src="app.js"></script>
+</body>
+</html>

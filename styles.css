@@ -1,0 +1,238 @@
+/* 2 STATES College Event Custom Styles (Overall Glassy Flow Transition Design) */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-punjab: #D4AF37;
+  --color-punjab-dark: #B8860B;
+  --color-tamil: #114B3E;
+  --color-tamil-accent: #D35400;
+  
+  --text-main: #1F2937;
+  --text-muted: #4B5563;
+  --border-color: rgba(229, 231, 235, 0.4);
+}
+
+/* Dark Mode Variables */
+html.dark {
+  --text-main: #F8FAFC;
+  --text-muted: #94A3B8;
+  --border-color: rgba(51, 65, 85, 0.4);
+}
+
+/* Glassy Animated Gradient Background */
+@keyframes flowGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: linear-gradient(-45deg, #FAF6EE, #F5EAE0, #E8F5F1, #FDF5E6, #F8EFE4);
+  background-size: 300% 300%;
+  animation: flowGradient 16s ease infinite;
+  color: var(--text-main);
+  overflow-x: hidden;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+html.dark body {
+  background: linear-gradient(-45deg, #090D16, #131B2E, #051A14, #1B1006, #0F172A);
+  background-size: 300% 300%;
+  animation: flowGradient 16s ease infinite;
+}
+
+h1, h2, h3, .font-serif-heading {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Larger, grander h2 section headings */
+h2 {
+  font-size: clamp(2.5rem, 6vw, 4.25rem);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.font-subheading {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* Overall Website Glassmorphism Overrides */
+section {
+  background-color: transparent !important;
+}
+
+.glass-card,
+.bg-white,
+.bg-parchment,
+article,
+.hover-lift {
+  backdrop-filter: blur(18px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(180%) !important;
+  background-color: rgba(255, 255, 255, 0.65) !important;
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06) !important;
+  border-radius: 1.25rem;
+}
+
+html.dark .glass-card,
+html.dark .bg-white,
+html.dark .bg-parchment,
+html.dark article,
+html.dark .hover-lift {
+  backdrop-filter: blur(18px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(180%) !important;
+  background-color: rgba(30, 41, 59, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Top Header & Navigation Bar Glassmorphism */
+header {
+  backdrop-filter: blur(24px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(200%) !important;
+  background-color: rgba(255, 255, 255, 0.75) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+html.dark header {
+  background-color: rgba(15, 23, 42, 0.75) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Dual Culture Hero Glass Overlay */
+.bg-dual-culture {
+  background: linear-gradient(135deg, rgba(28, 12, 1, 0.88) 0%, rgba(23, 5, 0, 0.88) 40%, rgba(4, 26, 20, 0.88) 100%) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.text-gold {
+  color: #D4AF37;
+}
+
+.bg-gold {
+  background-color: #D4AF37;
+}
+
+.border-gold {
+  border-color: #C5A059;
+}
+
+/* Dark mode text & input overrides */
+html.dark .text-stone-900,
+html.dark .text-stone-800 {
+  color: #F8FAFC !important;
+}
+
+html.dark .text-stone-700,
+html.dark .text-stone-600 {
+  color: #CBD5E1 !important;
+}
+
+html.dark .text-stone-500 {
+  color: #94A3B8 !important;
+}
+
+html.dark .bg-stone-50,
+html.dark .bg-stone-100 {
+  background-color: rgba(15, 23, 42, 0.7) !important;
+  border-color: rgba(51, 65, 85, 0.5) !important;
+}
+
+html.dark .bg-amber-50\/50,
+html.dark .bg-emerald-50\/50 {
+  background-color: rgba(30, 41, 59, 0.65) !important;
+}
+
+html.dark #mobileNav {
+  background-color: rgba(30, 41, 59, 0.9) !important;
+  backdrop-filter: blur(20px);
+}
+
+/* Tab active states */
+.tab-btn {
+  backdrop-filter: blur(12px);
+  border-radius: 9999px;
+  margin: 0 4px;
+}
+
+.tab-btn.active {
+  background-color: #114B3E;
+  color: #FFFFFF !important;
+  border-color: #114B3E;
+  box-shadow: 0 4px 14px rgba(17, 75, 62, 0.3);
+}
+
+.region-btn {
+  backdrop-filter: blur(12px);
+}
+
+.region-btn.active-all {
+  background: linear-gradient(90deg, #D4AF37, #114B3E);
+  color: #FFFFFF !important;
+}
+
+.region-btn.active-punjab {
+  background-color: #D4AF37;
+  color: #1F2937 !important;
+}
+
+.region-btn.active-tamilnadu {
+  background-color: #114B3E;
+  color: #FFFFFF !important;
+}
+
+/* Glassy Lift & Glow */
+.hover-lift {
+  transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.16) !important;
+  border-color: rgba(212, 175, 55, 0.6) !important;
+}
+
+/* Countdown Box Glass */
+.countdown-box {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(212, 175, 55, 0.45) !important;
+}
+
+/* Glass Footer */
+footer {
+  backdrop-filter: blur(24px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(200%) !important;
+  background-color: rgba(9, 13, 22, 0.88) !important;
+}
+
+/* Glass Modal */
+#blogModalContent {
+  backdrop-filter: blur(24px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(200%) !important;
+  background-color: rgba(255, 255, 255, 0.88) !important;
+}
+
+html.dark #blogModalContent {
+  background-color: rgba(15, 23, 42, 0.88) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(197, 160, 89, 0.6);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #114b3e;
+}
